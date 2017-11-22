@@ -7,6 +7,7 @@
     "bootstrap": "3.3.7",
     "inline-source": "5.2.6",
     "jquery": "3.2.1",
+    "paste.js": "0.0.21",
     "qartjs": "1.1.2",
     "webpack": "3.8.1"
   },

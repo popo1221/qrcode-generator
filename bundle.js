@@ -78,6 +78,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 $(document).ready(function() {
+
+    $('.pastable').pastableNonInputable();
+    $(document).on('pasteImage', function (ev, data){
+        console.log("dataURL: " + data.dataURL);
+        console.log("width: " + data.width);
+        console.log("height: " + data.height);
+        console.log(data.blob);
+
+        imagePath = data.dataURL;
+        $('#image img').attr('src', imagePath);
+        makeQArt();
+    }).on('pasteImageError', function(ev, data){
+        alert('Oops: ' + data.message);
+        if(data.url){
+            alert('But we got its url anyway:' + data.url)
+        }
+    }).on('pasteText', function (ev, data){
+        console.log("text: " + data.text);
+    });
+
   var value = 'https://github.com/kciter/qart.js';
   var filter = 'threshold';
   var defaultImage = $('#default-image').attr('src');

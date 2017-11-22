@@ -45,3 +45,13 @@ label {
 #image {
   margin: 5px;
 }
+
+.pastable{
+  transition: box-shadow ease .3s;
+}
+.pastable:hover{
+  box-shadow: 0 0 3px black;
+}
+.pastable.pastable-focus{
+  box-shadow: 0 0 10px black;
+}
