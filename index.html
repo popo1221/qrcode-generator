@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link inline rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link inline rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img style="display:none;" inline id="default-image" src="example.png" alt="" srcset="">
+  <h1>QAraasdft.js</h1>
+  <h2>From</h2>
+  <label>
+      Value:
+      <textarea id="value" type="text" rows="3" cols="45">https://github.com/kciter/qart.js
+        </textarea>
+  </label>
+
+  <label>
+      Background:
+      <input id="bg" type="text" value="#C2C">
+  </label>
+
+  <label>
+      Size:
+      <input id="size" type="number" value="195">
+  </label>
+
+  <label>
+      Version:
+      <input id="version" type="number" value="10">
+  </label>
+
+  <label>
+      Fill type:
+      <select id='fillType' name="fillType">
+        <option>scale_to_fit</option>
+        <option>fill</option>
+      </select>
+  </label>
+
+  <label>
+      <input id="file" type="file">
+  </label>
+
+  <label>
+      Threshold: <input type="radio" value="threshold" name="filter" checked>
+      Color: <input type="radio" value="color" name="filter">
+  </label>
+
+  <div class="group">
+      <div id="qr"></div>
+      <div id="image"><img src="./example.png" width="171"></div>
+  </div>
+  <h2>To</h2>
+  <div class="group">
+      <div id="combine"></div>
+  </div>
+  <script inline src="node_modules/jquery/dist/jquery.js"></script>
+  <script inline src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script inline src="bundle.js"></script>
+</body>
+</html>
